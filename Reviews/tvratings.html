@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TV Show Ratings - MovieVerse</title>
+
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+
+  .back-button {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: #80cbc4;
+    background-color: transparent;
+    border: 2px solid #80cbc4;
+    border-radius: 8px;
+    text-decoration: none;
+    text-shadow: 0 0 3px rgba(128, 203, 196, 0.3);
+    box-shadow: 0 0 6px rgba(128, 203, 196, 0.15);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+  }
+
+  .back-button:hover {
+    background-color: #80cbc4;
+    color: #121212;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(128, 203, 196, 0.4);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #80cbc4;
+    text-shadow: 0 0 4px rgba(128, 203, 196, 0.4);
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    color: #80cbc4;
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    text-shadow: 0 0 4px rgba(128, 203, 196, 0.3);
+  }
+
+  .rating-box {
+    background-color: #1e1e2f;
+    border-left: 6px solid #80cbc4;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(128, 203, 196, 0.2);
+  }
+
+  .rating-box h3 {
+    color: #80cbc4;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 0 3px rgba(128, 203, 196, 0.3);
+  }
+
+  .ratings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .rating-example {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #1e1e2f;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(128, 203, 196, 0.2);
+  }
+
+  .rating-image {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    filter: brightness(1.2) contrast(1.1);
+    background-color: transparent;
+    mix-blend-mode: lighten;
+  }
+
+  .rating-description h4 {
+    margin-bottom: 0.3rem;
+    color: #80cbc4;
+    text-shadow: 0 0 3px rgba(128, 203, 196, 0.3);
+  }
+
+  @media (max-width: 600px) {
+    .rating-example {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .rating-image {
+      width: 140px;
+    }
+  }
+
+  footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #aaa;
+    box-shadow: 0 -2px 12px rgba(128, 203, 196, 0.1);
+  }
+
+  footer h4 {
+    color: #80cbc4;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 3px rgba(128, 203, 196, 0.25);
+  }
+
+  .back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: #80cbc4;
+  background-color: transparent;
+  border: 2px solid #80cbc4;
+  border-radius: 8px;
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(128, 203, 196, 0.3);
+  box-shadow: 0 0 6px rgba(128, 203, 196, 0.15);
+  transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.back-button:hover {
+  background-color: #80cbc4;
+  color: #121212;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(128, 203, 196, 0.4);
+}
+
+</style>
+<body>
+
+  <a href="/Sami Proyects/Movie Page Proyect/index.html" class="back-button">← Back to Home</a>
+
+  
+  <div class="container">
+    <h1>TV Show Ratings</h1>
+    <p>TV show ratings measure how many people are watching a particular show and what kind of audience is tuning in. These ratings help networks, advertisers, and creators make key decisions about content and scheduling.</p>
+
+    <h2>How TV Ratings Work:</h2>
+    <div class="rating-box">
+      <h3>Measurement</h3>
+      <p>Ratings are gathered through statistical sampling. Nielsen Media Research uses devices called People Meters, which are installed in selected households to represent the broader viewing population. This data is not a full count of every viewer but a representative estimate.</p>
+    </div>
+
+    <h2>TV Parental Guidelines: Age-Based Ratings</h2>
+
+    <div class="rating-box">
+      <h3>What Are TV Parental Guidelines?</h3>
+      <p>
+        The TV Parental Guidelines are a content rating system developed to help parents choose appropriate programming for children and teens. Each rating reflects the age group for which the content is deemed suitable, and whether it may contain violence, language, sexual content, or other mature themes.
+      </p>
+    </div>
+
+    <div class="rating-box">
+      <h3>Age Ratings and Their Meaning</h3>
+      <ul>
+        <li><strong>TV-Y:</strong> Suitable for all children. Programming is designed to be appropriate for young audiences.</li>
+        <li><strong>TV-Y7:</strong> For children age 7 and older. May contain mild fantasy violence. The <strong>FV</strong> label indicates more intense fantasy violence.</li>
+        <li><strong>TV-G:</strong> General audience. Suitable for all ages with little or no objectionable content.</li>
+        <li><strong>TV-PG:</strong> Parental guidance suggested. Some material may not be suitable for children.</li>
+        <li><strong>TV-14:</strong> Parents strongly cautioned. May include strong language, sexual content, or intense violence. Not recommended for children under 14.</li>
+        <li><strong>TV-MA:</strong> Mature audiences only. Content may be unsuitable for viewers under 17 and can include graphic language, explicit sexual content, or violence.</li>
+      </ul>
+    </div>
+
+    <div class="rating-box">
+      <h3>Content Descriptors</h3>
+      <p>
+        Some ratings come with content letters that specify the type of material included:
+      </p>
+      <ul>
+        <li><strong>D:</strong> Suggestive Dialogue</li>
+        <li><strong>L:</strong> Coarse or Crude Language</li>
+        <li><strong>S:</strong> Sexual Content</li>
+        <li><strong>V:</strong> Violence</li>
+        <li><strong>FV:</strong> Fantasy Violence (only used with TV-Y7)</li>
+      </ul>
+    </div>
+
+    <h2>Examples of Ratings:</h2>
+
+    <div class="ratings-list">
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/TV-SHOWS-PIC-RAINTG/TV Y.png" alt="" class="rating-image" />
+        <div class="rating-description">
+          <h4>TV-Y</h4>
+          <p>Designed for all children. Contains themes and content suitable for young kids.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/TV-SHOWS-PIC-RAINTG/TV PI.png" alt="" class="rating-image" />
+        <div class="rating-description">
+          <h4>TV-Y E/I</h4>
+          <p>Educational/Informational content aimed at children. Meets FCC guidelines.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/TV-SHOWS-PIC-RAINTG/y7.png" alt="TV-Y7 Rating" class="rating-image" />
+        <div class="rating-description">
+          <h4>TV-Y7</h4>
+          <p>Suitable for ages 7 and older. May contain mild fantasy violence.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/TV-SHOWS-PIC-RAINTG/Screenshot 2025-06-19 191206.png" alt="TV-Y7 FV Rating" class="rating-image" />
+        <div class="rating-description">
+          <h4>TV-Y7 FV</h4>
+          <p>TV-Y7 content with more intense fantasy violence. FV stands for Fantasy Violence.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/TV-SHOWS-PIC-RAINTG/g.png" alt="TV-G Rating" class="rating-image" />
+        <div class="rating-description">
+          <h4>TV-G</h4>
+          <p>General Audience. Suitable for all ages with little or no offensive material.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/TV-SHOWS-PIC-RAINTG/TV PA.png" alt="TV-PG Rating" class="rating-image" />
+        <div class="rating-description">
+          <h4>TV-PG</h4>
+          <p>Parental guidance suggested. May include mild violence, language, or suggestive dialogue.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/TV-SHOWS-PIC-RAINTG/14.png" alt="TV-14 Rating" class="rating-image" />
+        <div class="rating-description">
+          <h4>TV-14</h4>
+          <p>Parents strongly cautioned. May contain strong language, sexual content, or intense violence.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/TV-SHOWS-PIC-RAINTG/ma.png" alt="TV-MA Rating" class="rating-image" />
+        <div class="rating-description">
+          <h4>TV-MA</h4>
+          <p>Mature Audiences Only. Unsuitable for viewers under 17. May contain graphic or explicit material.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h4>MovieVerse</h4>
+    <p>Learn how TV ratings help networks and viewers make better decisions about programming and content.</p>
+  </footer>
+
+</body>
+</html>
+

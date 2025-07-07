@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Film Ratings - MovieVerse</title>
+  <style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff69b4;
+  text-shadow: 0 0 4px rgba(255, 105, 180, 0.4), 0 0 8px rgba(138, 43, 226, 0.2);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #b388ff;
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  text-shadow: 0 0 4px rgba(179, 136, 255, 0.3);
+}
+
+.rating-box {
+  background-color: #1e1e2f;
+  border-left: 6px solid #8a2be2;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(138, 43, 226, 0.2);
+}
+
+.rating-box h3 {
+  color: #ff69b4;
+  margin-bottom: 0.3rem;
+  text-shadow: 0 0 3px rgba(255, 105, 180, 0.3);
+}
+
+.ratings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.rating-card {
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 6px rgba(255, 105, 180, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rating-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.25);
+}
+
+.rating-card h4 {
+  color: #8a2be2;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 3px rgba(138, 43, 226, 0.3);
+}
+
+.rating-example {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #1e1e2f;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(179, 136, 255, 0.2);
+}
+
+.rating-image {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: brightness(1.2) contrast(1.1);
+  background-color: transparent;
+  mix-blend-mode: lighten;
+}
+
+.rating-description h4 {
+  margin-bottom: 0.3rem;
+  color: #ff69b4;
+  text-shadow: 0 0 3px rgba(255, 105, 180, 0.3);
+}
+
+@media (max-width: 600px) {
+  .rating-example {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rating-image {
+    width: 140px;
+  }
+}
+
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #aaa;
+  box-shadow: 0 -2px 12px rgba(255, 105, 180, 0.1);
+}
+
+footer h4 {
+  color: #b388ff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 3px rgba(179, 136, 255, 0.25);
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: #ff69b4;
+  background-color: transparent;
+  border: 2px solid #ff69b4;
+  border-radius: 8px;
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(255, 105, 180, 0.3);
+  box-shadow: 0 0 6px rgba(255, 105, 180, 0.15);
+  transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.back-button:hover {
+  background-color: #ff69b4;
+  color: #121212;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
+}
+
+
+  </style>
+</head>
+<body>
+
+  <a href="/Sami Proyects/Movie Page Proyect/index.html" class="back-button">← Back to Home</a>
+
+  <div class="container">
+    <h1>Film Ratings</h1>
+    <p>
+      Movie rating systems, like the one created by the Motion Picture Association (MPA), provide guidance on the appropriate age for viewing films. These classifications help parents make informed decisions based on content such as violence, sexual content, language, and drug use.
+    </p>
+
+    <h2>How It Works:</h2>
+
+    <div class="rating-box">
+      <h3>1. Evaluation</h3>
+      <p>A board of parents or professionals watches the film and evaluates its content in detail.</p>
+    </div>
+
+    <div class="rating-box">
+      <h3>2. Factors Considered</h3>
+      <p>They look at several factors:</p>
+      <ul>
+        <li><strong>Violence:</strong> Frequency, intensity, and graphic nature.</li>
+        <li><strong>Sex & Nudity:</strong> Level and context of sexual content.</li>
+        <li><strong>Language:</strong> Use and severity of offensive terms.</li>
+        <li><strong>Drug Use:</strong> How substances are portrayed or consumed.</li>
+      </ul>
+    </div>
+
+    <div class="rating-box">
+      <h3>3. Rating Assignment</h3>
+      <p>Based on the content, the film receives a rating that reflects the appropriate viewer age.</p>
+    </div>
+
+    <div class="rating-box">
+      <h3>4. Parental Guidance</h3>
+      <p>Ratings act as general guidance, but parents are encouraged to review detailed content for PG or PG-13 movies.</p>
+    </div>
+
+    <div class="rating-box">
+      <h3>5. Additional Information</h3>
+      <p>Some organizations, like Common Sense Media, provide deeper insights on specific scenes and age-suitability.</p>
+    </div>
+
+    <h2>Examples of Ratings:</h2>
+
+    <div class="ratings-list">
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/Pics/Film Rating/g.png" alt="G Rating" class="rating-image">
+        <div class="rating-description">
+          <h4>G – General Audiences</h4>
+          <p>Suitable for all ages. No offensive content.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/Pics/Film Rating/pg.png" alt="PG Rating" class="rating-image">
+        <div class="rating-description">
+          <h4>PG – Parental Guidance Suggested</h4>
+          <p>Some content might not be suitable for young children.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/Pics/Film Rating/13.png" alt="PG-13 Rating" class="rating-image">
+        <div class="rating-description">
+          <h4>PG-13 – Parents Strongly Cautioned</h4>
+          <p>Some material may be inappropriate for children under 13.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/Pics/Film Rating/R.png" alt="R Rating" class="rating-image">
+        <div class="rating-description">
+          <h4>R – Restricted</h4>
+          <p>Under 17 requires accompanying parent or guardian.</p>
+        </div>
+      </div>
+
+      <div class="rating-example">
+        <img src="/Sami Proyects/Movie Page Proyect/Reviews/Pics/Film Rating/nc17.png" alt="NC-17 Rating" class="rating-image">
+        <div class="rating-description">
+          <h4>NC-17 – Adults Only</h4>
+          <p>No one 17 and under admitted. For mature audiences only.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h4>MovieVerse</h4>
+    <p>Learn more about how we rate and evaluate films to help you make informed choices.</p>
+  </footer>
+
+</body>
+</html>

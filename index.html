@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MovieVerse</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    /* Header estilo Vice City */
+    header {
+      text-align: center;
+      padding: 5rem 1rem 4rem;
+      background: linear-gradient(to right, #ff69b4, #8a2be2);
+      position: relative;
+      box-shadow: 0 5px 20px rgba(255, 105, 180, 0.4);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: #ffffff;
+      margin: 0;
+      text-shadow: 0 0 10px #ff69b4, 0 0 20px #8a2be2;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ffe6f5;
+      margin-top: 1rem;
+    }
+
+    /* Línea recta separadora */
+    .divider-line {
+      height: 6px;
+      background: linear-gradient(to right, #ff69b4, #8a2be2);
+      border: none;
+    }
+
+    .movies-section {
+      padding: 3rem 1rem 2rem;
+    }
+
+    .movies-section h2 {
+      margin-left: 1rem;
+      font-size: 1.8rem;
+      color: #b388ff;
+      border-left: 5px solid #b388ff;
+      padding-left: 1rem;
+    }
+
+    .movies-scroll {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .movies-scroll::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .movies-scroll::-webkit-scrollbar-thumb {
+      background: #b388ff;
+      border-radius: 4px;
+    }
+
+    .movie-card {
+      flex: 0 0 auto;
+      width: 160px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(179, 136, 255, 0.2);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .movie-card .info {
+      padding: 0.5rem;
+    }
+
+    .movie-card .info h3 {
+      margin: 0;
+      color: #b388ff;
+      font-size: 0.9rem;
+    }
+
+    .movie-card .info p {
+      font-size: 0.75rem;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #aaa;
+    }
+
+    footer h4 {
+      margin-bottom: 0.5rem;
+      color: #b388ff;
+    }
+
+    footer p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 0.9rem;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background-color: #1e1e2f;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      box-shadow: 5px 0 20px rgba(179, 136, 255, 0.3);
+    }
+
+    .sidebar a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #b388ff;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #2a2a40;
+    }
+
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 36px;
+    }
+
+    .hamburger {
+      font-size: 30px;
+      cursor: pointer;
+      color: #b388ff;
+      padding: 10px 20px;
+      display: inline-block;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 101;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="Reviews/all-movies.html">All Movies</a>
+    <a href="/Sami Proyects/Movie Page Proyect/Reviews/Film-Ratings.html">Film Ratings</a>
+    <a href="./Reviews/tvratings.html">TV Show Ratings</a>
+  </div>
+
+  <span class="hamburger" onclick="openNav()">☰</span>
+
+  <header>
+    <h1>MovieVerse</h1>
+    <p>Movie reviews, parents guides & everything you need to know</p>
+  </header>
+
+  <!-- Línea separadora -->
+  <div class="divider-line"></div>
+
+  <section class="movies-section">
+    <h2>🔥 Top New Movies of 2025 🔥</h2>
+    <div class="movies-scroll">
+
+  <a href="./Reviews/nezha2.html" class="movie-card">
+    <img src="./Reviews/Pics/nehzha2.jpg" alt="Ne Zha 2 Poster">
+    <div class="info">
+      <h3>NE ZHA 2</h3>
+      <p>2025 | 2h 24m | PG‑13</p>
+    </div>
+  </a>
+
+  <a href="./Reviews/MIFR.html" class="movie-card">
+    <img src="./Reviews/Pics/MV5BZGQ5NGEyYTItMjNiMi00Y2EwLTkzOWItMjc5YjJiMjMyNTI0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Mission Impossible 8 Poster">
+    <div class="info">
+      <h3>Mission: Impossible – Dead Reckoning Part Two</h3>
+      <p>2025 | 2h 49m | PG-13</p>
+    </div>
+  </a>
+
+  <a href="./Reviews/Lilo&Stich.html" class="movie-card">
+    <img src="./Reviews/Pics/Lilo_&_Stitch_2025_Theatrical_Poster.jpg" alt="Lilo & Stitch Poster">
+    <div class="info">
+      <h3>Lilo & Stitch</h3>
+      <p>2025 | 1h 48m | PG</p>
+    </div>
+  </a>
+
+  <a href="./Reviews/thunderbolts.html" class="movie-card">
+    <img src="./Reviews/Pics/thunderbolts.jpg" alt="Thunderbolts Poster">
+    <div class="info">
+      <h3>Thunderbolts</h3>
+      <p>2025 | 2h 7m | PG‑13</p>
+    </div>
+  </a>
+
+  <a href="./Reviews/sinners.html" class="movie-card">
+    <img src="./Reviews/Pics/sinnerso.webp" alt="Sinners Poster">
+    <div class="info">
+      <h3>Sinners</h3>
+      <p>2025 | 2h 17m | R</p>
+    </div>
+  </a>
+
+  <a href="./Reviews/cabnw.html" class="movie-card">
+    <img src="/Sami Proyects/Movie Page Proyect/Reviews/Pics/cabnw.webp" alt="captain america: brave new world Poster">
+    <div class="info">
+      <h3>Captain America: Brave New World</h3>
+      <p>2025 | 1h 58m | PG-13</p>
+    </div>
+  </a>
+
+  <a href="./Reviews/httyd.html" class="movie-card">
+    <img src="./Reviews/Pics/how-to-train-your-dragon_wqekrpaz_480x.progressive.webp" alt="How to train your dragon Poster">
+    <div class="info">
+      <h3>How to Train Your Dragon</h3>
+      <p>2025 | 2h 5m | PG</p>
+    </div>
+  </a>
+
+  <a href="./Reviews/ballerina.html" class="movie-card">
+    <img src="./Reviews/Pics/ballerina_deoabvwb_480x.progressive.webp" alt="Ballerina Poster">
+    <div class="info">
+      <h3>Ballerina</h3>
+      <p>2025 | 2h 5m | PG</p>
+    </div>
+  </a>
+
+  <a href="./Reviews/minecraft.html" class="movie-card">
+    <img src="./Reviews/Pics/a-minecraft-movie_nccb8hda_480x.progressive.webp" alt="A minecraft movie Poster">
+    <div class="info">
+      <h3>A Minecraft Movie</h3>
+      <p>2025 | 1h 41m | PG</p>
+    </div>
+  </a>
+
+  </div>
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    <h4>About Us</h4>
+    <p>
+      MovieVerse was created by passionate movie lovers who want to share reviews, age guides, and insights in a clear and friendly way. Join us on this cinematic journey!
+    </p>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+
+</body>
+</html>
