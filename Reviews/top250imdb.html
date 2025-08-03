@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top 250 IMDb Movies - Movie Verse</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: grey;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #eee;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .main-content {
+      background-color: #181818;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(245,197,24,0.3);
+    }
+
+    h1 {
+      color: #f5c518;
+      font-weight: 900;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      text-shadow:
+        0 0 6px #f5c51888,
+        0 0 10px #f5c51866,
+        0 0 20px #f5c51844;
+    }
+
+    .top-movies-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .movie-link {
+      text-decoration: none;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .movie-link:visited,
+    .movie-link:link {
+      color: inherit;
+    }
+
+    .movie-item {
+      background: #1f1f1f;
+      padding: 12px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      transform: skew(-10deg);
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .movie-item:hover {
+      transform: skew(-10deg) scale(1.03);
+      box-shadow: 4px 4px 15px rgba(245,197,24,0.9);
+    }
+
+    .movie-poster {
+      width: 80px;
+      height: 120px;
+      border-radius: 6px;
+      object-fit: cover;
+      margin-right: 16px;
+      flex-shrink: 0;
+      transform: skew(10deg);
+    }
+
+    .movie-info {
+      transform: skew(10deg);
+      color: #eee;
+      flex-grow: 1;
+    }
+
+    .movie-title {
+      margin: 0 0 0.2rem 0;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .movie-details {
+      margin: 0 0 0.5rem 0;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .movie-rating {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      color: #f5c518;
+      font-size: 1.1rem;
+    }
+
+    .star {
+      color: #f5c518;
+      font-size: 1.3rem;
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <main class="main-content">
+    <h1>Top 250 IMDb Movies</h1>
+    <ul class="top-movies-list">
+
+      <!-- 1. The Shawshank Redemption -->
+      <a href="./shawshank.html" class="movie-link">
+        <li class="movie-item">
+          <img src="./Pics/shawshan.webp" alt="The Shawshank Redemption" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">1. The Shawshank Redemption</h3>
+            <p class="movie-details">1994 | 2h 22m | PG-13</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">9.3</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <!-- 2. The Godfather -->
+      <a href="./The-Godfather.html" class="movie-link">
+        <li class="movie-item">
+          <img src="./Pics/The Godfather.jpeg" alt="The Godfather" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">2. The Godfather</h3>
+            <p class="movie-details">1972 | 2h 55m | R</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">9.2</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <!-- 3. The Dark Knight -->
+      <a href="./dark-knight.html" class="movie-link">
+        <li class="movie-item">
+          <img src="./Pics/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg" alt="The Dark Knight" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">3. The Dark Knight</h3>
+            <p class="movie-details">2008 | 2h 32m | PG-13</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">9.0</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <!-- 4. The Godfather Part II -->
+      <a href="./The-Godfather-II.html" class="movie-link">
+        <li class="movie-item">
+          <img src="./Pics/thegodfather2.jpeg" alt="The Godfather Part II" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">4. The Godfather Part II</h3>
+            <p class="movie-details">1974 | 3h 22m | R</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">9.0</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <!-- 5. 12 Angry Men -->
+      <a href="./12angrymen.html" class="movie-link">
+        <li class="movie-item">
+          <img src="./Pics/12angrymen.webp" alt="12 Angry Men" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">5. 12 Angry Men</h3>
+            <p class="movie-details">1957 | 1h 36m | Not Rated</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">9.0</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <!-- 7. The Lord of the Rings: The Return of the King -->
+      <a href="./tlorrf.html" class="movie-link">
+        <li class="movie-item">
+          <img src="./Pics/lordofringsking.webp" alt="The Lord of the Rings: The Return of the King" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">6. The Lord of the Rings: The Return of the King</h3>
+            <p class="movie-details">2003 | 3h 21m | PG-13</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">9.0</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <!-- 6. Schindler's List -->
+      <a href="./schindlerslist.html" class="movie-link">
+        <li class="movie-item">
+          <img src="./Pics/schindler's list.jpg" alt="Schindler's List" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">7. Schindler's List</h3>
+            <p class="movie-details">1993 | 3h 15m | R</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">9.0</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <!-- 8. Pulp Fiction -->
+      <a href="" class="movie-link">
+        <li class="movie-item">
+          <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktNWIxOS00YjA0LTg2NjQtZWI5ODdjZjYxYjhjXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg" alt="Pulp Fiction" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">8. Pulp Fiction</h3>
+            <p class="movie-details">1994 | 2h 34m | R</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">8.9</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <!-- 9. The Lord of the Rings: The Fellowship of the Ring -->
+      <a href="" class="movie-link">
+        <li class="movie-item">
+          <img src="https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtY2FlOS00ZDI2LThmNTEtMGEyNmNhYjRlZGI1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="The Lord of the Rings: The Fellowship of the Ring" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">9. The Lord of the Rings: The Fellowship of the Ring</h3>
+            <p class="movie-details">2001 | 2h 58m | PG-13</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">8.9</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+      <!-- 10. The Good, the Bad and the Ugly -->
+      <a href="" class="movie-link">
+        <li class="movie-item">
+          <img src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzOTMtYzEyMC00NjNkLTk0MTUtYjc1YWIxNDY3MTFkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="The Good, the Bad and the Ugly" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">10. The Good, the Bad and the Ugly</h3>
+            <p class="movie-details">1966 | 2h 58m | R</p>
+            <div class="movie-rating">
+              <span class="star">★</span>
+              <span class="rating-score">8.8</span>
+            </div>
+          </div>
+        </li>
+      </a>
+
+
+    </ul>
+  </main>
+</body>
+</html>
